@@ -1,9 +1,17 @@
-.App {
+#App, #App1 {
     font-family: Arial, sans-serif;
-    margin: 40px auto;
-    max-width: 300px;
+    margin: 40px;
+    width: 45%;   /* Changed from 300px to 45% */
     padding: 20px;
-  }
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
   
   h2 {
     color: #333;

@@ -27,67 +27,69 @@ function App()
    console.log('Product details',product);
  };
  
- return (
-  <div className="App">
+ return(
+    <div className='container'>
+  <div id="App">
     {/* Shop Form */}
-    <div>
-      <h2>New Shop</h2>
-      <form onSubmit={handleShopSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" onChange={handleShopChange} />
-        </label>
-        <br />
-        <label>
-          Description:
-          <textarea name="description" onChange={handleShopChange}></textarea>
-        </label>
-        <br />
-        <button type="submit">SUBMIT</button>
-        <button type="button">CANCEL</button>
-      </form>
-    </div>
-
-    {/* Product Form */}
-    <div>
-      <h2>New Product</h2>
-      <form onSubmit={handleProductSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" onChange={handleProductChange} />
-        </label>
-        <br />
-        <label>
-          Description:
-          <textarea name="description" onChange={handleProductChange}></textarea>
-        </label>
-        <br />
-        <label>
-          Category:
-          <select name="category" onChange={handleProductChange}>
-            <option value="Electronics">Electronics</option>
-            <option value="Grocery">Grocery</option>
-            <option value="Food">Food</option>
-            <option value="Fashion">Fashion</option>
-            <option value="Others">Others</option>
-          </select>
-        </label>
-        <br />
-        <label>
-          Quantity:
-          <input type="number" name="quantity" min="0" onChange={handleProductChange} />
-        </label>
-        <br />
-        <label>
-          Price:
-          <input type="number" name="price" min="0.01" onChange={handleProductChange} />
-        </label>
-        <br />
-        <button type="submit">SUBMIT</button>
-        <button type="button">CANCEL</button>
-      </form>
-    </div>
+    <h2>New Shop</h2>
+    <form onSubmit={handleShopSubmit}>
+      <label>
+        Name:
+        <input type="text" name="name" onChange={handleShopChange} />
+      </label>
+      <br />
+      <label>
+        Description:
+        <textarea name="description" onChange={handleShopChange}></textarea>
+      </label>
+      <br />
+      <button type="submit">SUBMIT</button>
+      <button type="button">CANCEL</button>
+    </form>
   </div>
+
+  <div id="App1">
+    {/* Product Form */}
+    <h2>New Product</h2>
+    <form onSubmit={handleProductSubmit}>
+      <label>
+        Name:
+        <input type="text" name="name" onChange={handleProductChange} />
+      </label>
+      <br />
+      <label>
+        Description:
+        <textarea name="description" onChange={handleProductChange}></textarea>
+      </label>
+      <br />
+      <label>
+        Category:
+        <select name="category" onChange={handleProductChange}>
+          <option value="Electronics">Electronics</option>
+          <option value="Grocery">Grocery</option>
+          <option value="Food">Food</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Others">Others</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Quantity:
+        <input type="number" name="quantity" min="0" onChange={handleProductChange} />
+      </label>
+      <br />
+      <label>
+        Price:
+        <input type="number" name="price" min="0.01" onChange={handleProductChange} />
+      </label>
+      <br />
+      <button type="submit">SUBMIT</button>
+      <button type="button">CANCEL</button>
+    </form>
+  </div>
+</div>
+
+
  );
 }
 
